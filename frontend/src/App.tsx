@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { AuthProvider, useAuth } from "./context/AuthContext";
+import { Routes, Route } from "react-router-dom";
+import { useAuth,AuthProvider } from "./context/AuthContext";
 
 // Components
 import DashboardStudent from "./components/DashboardStudent";
@@ -19,7 +19,8 @@ function AppRoutes() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navbar */}
-      <Navbar/>
+      <Navbar />
+
       {/* Page Content */}
       <main className="p-6 mt-16">
         <Routes>
@@ -51,11 +52,10 @@ function AppRoutes() {
 }
 
 export default function App() {
+  // ✅ No Router here, only AuthProvider
   return (
     <AuthProvider>
-      <Router>
-        <AppRoutes />
-      </Router>
+      <AppRoutes />
     </AuthProvider>
   );
 }

@@ -1,6 +1,7 @@
 // src/pages/Home.tsx
 import { motion } from "framer-motion";
 import { ArrowRight, Users, Award, Star, Sparkles, CheckCircle, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const features = [
@@ -59,12 +60,12 @@ export default function Home() {
           Showcase, manage, and track all student achievements in one modern,
           digital platform designed for institutions.
         </p>
-        <a
-          href="/dashboard"
+        <Link
+          to="/login"
           className="mt-10 inline-flex items-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-indigo-700 transition relative z-10"
         >
           Get Started <ArrowRight className="w-5 h-5" />
-        </a>
+        </Link>
       </section>
 
       {/* Features */}

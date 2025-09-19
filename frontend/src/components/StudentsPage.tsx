@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { User } from "lucide-react";
 
 const students = [
-  { id: 1, name: "Amit Kumar", email: "amit@example.com", department: "CS", status: "Active" },
-  { id: 2, name: "Sneha Rani", email: "sneha@example.com", department: "IT", status: "Pending" },
-  { id: 3, name: "Rahul Das", email: "rahul@example.com", department: "ECE", status: "Active" },
+  { id: 1, name: "Bibhu Ranjan Mohanty", email: "bibhuranjanmohanty97@gmail.com", department: "CS", status: "Active" },
+  { id: 2, name: "Dinakrushna Mohanta", email: "dinakrushnamohanta7077@gmail.com", department: "IT", status: "Pending" },
+  { id: 3, name: "Ranjan Kumar Mohanta", email: "ranjan@gmail.com", department: "ECE", status: "Active" },
 ];
 
 export default function StudentsPage() {
